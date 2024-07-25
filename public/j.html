@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take your quiz</title>
+    <link rel="stylesheet" href="j.css">
+</head>
+<body>
+  <main class="main">
+    <header class="header">
+    <a href="#" class="logo"></a>
+    <nav class="navbar"></nav>   
+        
+    </nav>
+    
+</header>
+<section class="home">
+    <div class="home-content">
+      <h1 class="animated-heading">
+        <span class="word">WELCOME</span>
+        <span class="word">TO</span>
+        <span class="word">QUIZZLE</span>
+    </h1>
+    <p class="animated-paragraph">
+      <span class="word">Unlock</span>
+      <span class="word">New</span>
+      <span class="word">Knowledge</span>
+      <span class="word">and</span>
+      <span class="word">Test</span>
+      <span class="word">Your</span>
+      <span class="word">Skills</span>
+      <span class="word">with</span>
+      <span class="word">our</span>
+      <span class="word">Interactive</span>
+      <span class="word">Quizzes!</span>
+  </p>
+   <button class="start-btn"> click here</button>
+</div>
+</section>
+  </main>
+   <div class="popup">
+   
+      <div class="start-screen">
+        <h1 class="heading">CHOOSE</h1>
+        <div class="settings">
+          <label for="numQuestions">Number of Questions:</label>
+          <select id="numQuestions">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            
+          </select>
+          <label for="category">Select subjects:</label>
+          <select id="category">
+            <option value="">any subject</option>
+            <option value="CG">COMPUTER GRAPHICS AND VISUALIZATION</option>
+        
+            <option value="DBMS">DBMS</option>
+            <option value="ADA">ADA</option>
+          
+          </select>
+          <label for="difficulty">Select difficulty:</label>
+          <select id="difficulty">
+            <option value="">any difficulty</option>
+            <option value="easy">easy</option>
+            <option value="medium">medium</option>
+            <option value="hard">hard</option>
+          </select>
+          <label for="time">Select time per question:</label>
+          <select id="time">
+            <option value="10">10 seconds</option>
+            <option value="15">15 seconds</option>
+            <option value="20">20 seconds</option>
+  
+            <option value="30">30 seconds</option>
+            <option value="60">60 seconds</option>
+          </select>
+        </div>
+        <button class="btn-start">Start Quiz</button>
+        <button class="back">back </button>
+      </div>
+     <div class="quiz hide">
+      <div class="timer">
+        <div class="progress">
+          <div class="progress-bar"></div>
+          <span class="progress-text"></span>
+        </div>
+      </div>
+      <div class="question-wrapper">
+        <div class="number">
+          Question <span class="current">1</span>
+          <span class="total">/10</span>
+        </div>
+      
+        <div class="question">This is a question</div>
+        </div>
+       <div class="answer-wrapper">
+        
+      </div>
+    <div class="button-container">
+      <button class="btn-submit" disabled>Submit</button>
+      <button class="btn-next">Next</button>
+      <button class="btn-exit">Exit Quiz</button> 
+      </div>
+    </div>
+    <div class="end-screen hide">
+    
+      <h1 class="headingg">YOU COMPLETED YOUR QUIZ!</h1>
+    
+      <div class="score">
+        <span class="score-text">Your score:</span>
+        <div>
+          <span class="final-score">0</span>
+          <span class="total-score">/10</span>
+        </div>
+        <button class="restart">Restart Quiz</button>
+      </div>
+     
+    </div>
+</div>
+
+</div>
+<script src="script.js" ></script> 
+</body>
+</html>
